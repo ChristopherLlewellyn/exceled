@@ -8,9 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   links = [
-    { title: 'Systems', routerLink: '/systems', icon: 'cogs' },
-    { title: 'Training', routerLink: '/training', icon: 'chalkboard-teacher' },
-    { title: 'About Us', routerLink: '/about', icon: 'info' }
+    { title: 'Systems', link: 'systems', icon: 'cogs' },
+    { title: 'Training', link: 'training', icon: 'chalkboard-teacher' },
+    { title: 'About', link: 'about', icon: 'info' }
   ];
 
   constructor() { }

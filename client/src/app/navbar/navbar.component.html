@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<nav class="navbar navbar-expand navbar-dark bg-dark">
+<nav class="navbar navbar-expand navbar-light bg-light fixed-top">
   <div class="container">
     <!-- Navigation options -->
     <div class="navbar-nav">
@@ -7,12 +7,11 @@
       <a class="navbar-brand ml-2 mt-2 mb-2 mr-4" routerLink="/">
         <img src="../../assets/brand/omega.svg" width="30" height="30" class="d-inline-block align-top mr-1" alt=""
           loading="lazy">
-        Exceled
+        EXCEL'ED
       </a>
       <!-- Nav Links -->
       <div *ngFor="let link of links">
-        <a class="nav-item nav-link m-2" [routerLink]="link.routerLink" routerLinkActive="active"
-          [routerLinkActiveOptions]="{exact: true}">
+        <a class="nav-item nav-link m-2" [href]="'#' + link.link">
           <fa-icon [icon]="link.icon" class="mr-1"></fa-icon>
           {{ link.title }}
         </a>

@@ -16,11 +16,19 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 import { NavbarComponent } from './navbar/navbar.component';
+import { LandingComponent } from './landing/landing.component';
+import { HeroComponent } from './landing/hero/hero.component';
+import { AboutComponent } from './landing/about/about.component';
+import { SystemsComponent } from './landing/systems/systems.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    LandingComponent,
+    HeroComponent,
+    AboutComponent,
+    SystemsComponent
   ],
   imports: [
     BrowserModule,
