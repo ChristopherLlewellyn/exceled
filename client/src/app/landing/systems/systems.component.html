@@ -1,1 +1,163 @@
-<p>systems works!</p>
+<div class="pt-4 pb-4 bg-dark" id="systems">
+  <div class="container">
+    <div class="text-center">
+      <!-- Title -->
+      <h1 class="display-4" style="color:white">Systems</h1>
+
+      <!-- Systems -->
+      <div class="card-deck">
+
+        <div class="card border-0 bg-light mt-4 p-1">
+          <div class="card-header">
+            <h4>3 Year School Budget Model</h4>
+          </div>
+          <div class="card-body">
+            <p>3 year budget modelling as you've never seen it before. This system has been designed specifically for primary and secondary schools under ‘Fair Funding' regulations.</p>
+            <div class="row justify-content-center mt-3">
+              <button class="btn btn-dark-accent text-white" (click)="open(budgetModel)"><b>More Information</b></button>
+            </div>
+            <div class="row justify-content-center mt-3">
+              <button class="btn btn-dark text-white"><b>Download Sample</b></button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card border-0 bg-light mt-4">
+          <div class="card-header">
+            <h4>Managing Non-Public Funds</h4>
+          </div>
+          <div class="card-body">
+            <p>A versatile accounting tool written for schools initially, but also used by small businesses for its ease of use.</p>
+            <p>With this you can keep track of all ‘non-public' income and expenditure.</p>
+            <div class="row justify-content-center mt-3">
+              <button class="btn btn-dark-accent text-white" (click)="open(managingNonPublicFunds)"><b>More Information</b></button>
+            </div>
+            <div class="row justify-content-center mt-3">
+              <button class="btn btn-dark text-white"><b>Download Sample</b></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card border-0 bg-light mt-4">
+          <div class="card-header">
+            <h4>Teachers Salary Assessment</h4>
+          </div>
+          <div class="card-body">
+            <p>A statutory requirement for 1st September each year.</p>
+            <p>Produce a salary statement for each teacher containing the necessary detail, with the minimum of fuss and use it as a database year on year.</p>
+            <div class="row justify-content-center mt-3">
+              <button class="btn btn-dark-accent text-white" (click)="open(teachersSalaryAssessment)"><b>More Information</b></button>
+            </div>
+            <div class="row justify-content-center mt-3">
+              <button class="btn btn-dark text-white"><b>Download Sample</b></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="card-deck">
+
+        <div class="card border-0 bg-light mt-4">
+          <div class="card-header">
+            <h4>Staff Salary Calculator</h4>
+          </div>
+          <div class="card-body">
+            <p>This tool has been designed and updated specifically for LEA schools. It will accurately calculate all categories of staff salaries for payroll and personnel notifications using the new single status terms and conditions of service.</p>
+            <div class="row justify-content-center mt-3">
+              <button class="btn btn-dark-accent text-white" (click)="open(staffSalaryCalculator)"><b>More Information</b></button>
+            </div>
+            <div class="row justify-content-center mt-3">
+              <button class="btn btn-dark text-white"><b>Download Sample</b></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card border-0 bg-light mt-4">
+          <div class="card-header">
+            <h4>Customer Database and Invoicing System</h4>
+          </div>
+          <div class="card-body">
+            <p>As you undoubtedly find yourself invoicing more ‘customers' more often, why not keep a record of who, what for, how much and when, with this straight forward invoicing and database system.</p>
+            <div class="row justify-content-center mt-3">
+              <button class="btn btn-dark-accent text-white" (click)="open(customerDatabaseAndInvoicingSystem)"><b>More Information</b></button>
+            </div>
+            <div class="row justify-content-center mt-3">
+              <button class="btn btn-dark text-white"><b>Download Sample</b></button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Modals -->
+<ng-template #budgetModel let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">3 Year School Budget Model</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>Already proven in several L.E.A.s, this essential budgeting tool will accurately calculate staff costs, enable any number of budget plan variations for comparison, allow monitoring of the final budget throughout the year and enhance your budget plans with a professional format (Consistent Financial Reporting).</p>
+    <p>You will save an enormous amount of time, provide greater accuracy with your budget models and present more meaningful monitoring information to your Headteacher and Governors. This system enables you to move with change and promote professionalism within our field.</p>
+    <b>No specialist Excel knowledge required. Simply fill in the areas prompting input.</b>
+  </div>
+</ng-template>
+
+<ng-template #managingNonPublicFunds let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Managing Non-Public Funds</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>The system allows you to maintain separate income and expenditure categories, account for VAT if registered, reconcile to your bank statements and print out full record summaries for audit purposes.</p>
+    <p>Designed for all schools and improved by experience.</p>
+    <b>Uncomplicated and effective.</b>
+  </div>
+</ng-template>
+
+<ng-template #teachersSalaryAssessment let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Teachers Salary Assessment</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>This system allows for ‘Leadership', ‘Upper', ‘Advanced Skills' and 'Unqualified' pay scales, as well as the ‘Main' pay spine and various allowance points. (TLRs, Management, SEN and Recruitment/Retention points).</p>
+    <p>This previously daunting task has been made quick and easy, and fulfils your obligation to provide annual salary details to individuals.</p>
+  </div>
+</ng-template>
+
+<ng-template #staffSalaryCalculator let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Staff Salary Calculator</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>By using this system to calculate a salary you can also print a salary statement for all categories of staff.</p>
+    <p>Layout and style are clear and concise with an abundance of on screen help and prompting, and its operation is further explained by a new integrated user guide.</p>
+    <p>The system can be easily adapted to suit local pay and conditions variations. It will enable you to produce a one-off hard copy salary statement for new staff, and annually for current staff if you wish.</p>
+  </div>
+</ng-template>
+
+<ng-template #customerDatabaseAndInvoicingSystem let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-basic-title">Customer Database and Invoicing System</h4>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>You will be able to keep all of this information for future use and to produce standardised invoices for all of your debtors, either in a landscape format or using your existing school letterhead paper.</p>
+  </div>
+</ng-template>

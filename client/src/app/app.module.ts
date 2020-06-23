@@ -12,29 +12,24 @@ import {
   faHome,
   faCogs,
   faChalkboardTeacher,
-  faInfo
+  faInfo,
+  faCheckCircle
 } from '@fortawesome/free-solid-svg-icons';
 
 import { NavbarComponent } from './navbar/navbar.component';
-import { LandingComponent } from './landing/landing.component';
-import { HeroComponent } from './landing/hero/hero.component';
-import { AboutComponent } from './landing/about/about.component';
-import { SystemsComponent } from './landing/systems/systems.component';
+import { LandingModule } from './landing/landing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    LandingComponent,
-    HeroComponent,
-    AboutComponent,
-    SystemsComponent
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    LandingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -47,7 +42,8 @@ export class AppModule {
       faHome,
       faCogs,
       faChalkboardTeacher,
-      faInfo
+      faInfo,
+      faCheckCircle
     );
   }
 
