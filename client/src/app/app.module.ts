@@ -18,11 +18,13 @@ import {
 
 import { NavbarComponent } from './navbar/navbar.component';
 import { LandingModule } from './landing/landing.module';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
