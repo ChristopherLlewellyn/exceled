@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 
 //* FontAwesome Icons
 // https://www.tektutorialshub.com/angular/how-to-install-use-angular-fontawesome/
@@ -12,25 +13,29 @@ import { HeroComponent } from './hero/hero.component';
 import { AboutComponent } from './about/about.component';
 import { SystemsComponent } from './systems/systems.component';
 import { TrainingComponent } from './training/training.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    ReactiveFormsModule
   ],
   declarations: [
     LandingComponent,
     HeroComponent,
     AboutComponent,
     SystemsComponent,
-    TrainingComponent
+    TrainingComponent,
+    ContactComponent
   ],
   exports: [
     LandingComponent,
     HeroComponent,
     AboutComponent,
     SystemsComponent,
-    TrainingComponent
+    TrainingComponent,
+    ContactComponent
   ],
   bootstrap: [LandingComponent]
 })

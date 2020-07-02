@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -19,6 +20,7 @@ import {
 import { NavbarComponent } from './navbar/navbar.component';
 import { LandingModule } from './landing/landing.module';
 import { FooterComponent } from './footer/footer.component';
+import { ContactService } from './_services/contact.service';
 
 @NgModule({
   declarations: [
@@ -29,11 +31,12 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     NgbModule,
     FontAwesomeModule,
     LandingModule
   ],
-  providers: [],
+  providers: [ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { 
