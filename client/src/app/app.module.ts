@@ -14,7 +14,8 @@ import {
   faCogs,
   faChalkboardTeacher,
   faInfo,
-  faCheckCircle
+  faCheckCircle,
+  faEnvelopeSquare
 } from '@fortawesome/free-solid-svg-icons';
 
 import { NavbarComponent } from './navbar/navbar.component';
@@ -48,7 +49,8 @@ export class AppModule {
       faCogs,
       faChalkboardTeacher,
       faInfo,
-      faCheckCircle
+      faCheckCircle,
+      faEnvelopeSquare
     );
   }
 
